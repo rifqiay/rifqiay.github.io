@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset//style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: centuryGothicB;
+        src: url("./century-gothic/GOTHICB.TTF");
+      }
+      @font-face {
+        font-family: centuryGhotic;
+        src: url("./century-gothic/CenturyGothic.ttf");
+      }
+      body {
+        background-color: #0f1320;
+        overflow-x: hidden;
+      }
+      .text-1 {
+        color: #fff;
+        font-family: centuryGothicB;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 54px;
+        letter-spacing: -2%;
+      }
+
+      .img-1 {
+        position: absolute;
+        width: 691px;
+        left: -50px;
+        top: 0;
+      }
+
+      .wraper-text {
+        height: 615px;
+        display: flex;
+        align-items: center;
+      }
+      .title {
+        font-family: centuryGhotic;
+        font-weight: bold;
+        color: #00b4ec;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+      }
+      .desc {
+        font-family: centuryGhotic;
+        color: #dde2ff;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 24px;
+        vertical-align: Top;
+      }
+      .learn-btn {
+        background: #22a75d;
+        color: #fff;
+        font-family: centuryGhotic;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 100%;
+        padding: 13px 20px;
+        border-radius: 52px;
+        border: none;
+      }
+      /* slide 2 */
+      .text-tilte {
+        font-family: centuryGothicB;
+        font-style: Bold;
+        font-size: 73px;
+        line-height: 88px;
+        line-height: 120%;
+        letter-spacing: -2%;
+      }
+
+      .img-2 {
+        position: absolute;
+        width: 887px;
+        top: 55px;
+        left: -134px;
+      }
+
+      /* years section */
+      .wraper-years {
+        margin-top: 164px;
+      }
+      .years {
+        color: #e5e5e5;
+        font-family: centuryGhotic;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .title-2 {
+        font-family: centuryGothicB;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 72px;
+        letter-spacing: -0.5px;
+        color: #ffffff;
+        margin-bottom: 87px;
+      }
+      .img-years {
+        position: absolute;
+        top: -153px;
+        width: 970px;
+        left: 256px;
+        z-index: -1;
+      }
+      .info-years {
+        margin-top: 110px;
+      }
+      .info-years h4 {
+        font-family: centuryGhotic;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 24px;
+      }
+      .info-years p {
+        font-family: centuryGhotic;
+        color: #8b8b8b;
+        margin-top: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .info-years button {
+        background-color: #ffd100;
+        box-shadow: 0px 15px 25px rgba(255, 209, 0, 0.25);
+        border-radius: 52px;
+        border: none;
+        padding: 13px 20px;
+        margin-top: 46px;
+        font-weight: 700;
+        line-height: 17px;
+        font-size: 14px;
+      }
+      .card-1 {
+        background-color: #191f30;
+        border-radius: 12px;
+        padding: 23px 53px;
+      }
+      .card-1 h2 {
+        font-family: centuryGothicB;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        color: #ffffff;
+      }
+      .card-1 span {
+        color: #22a75d;
+      }
+      .card-1 p {
+        font-family: centuryGhotic;
+        color: #8b8b8b;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .card-1 .text-learn-1 {
+        font-family: centuryGhotic;
+        color: #22a75d;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        cursor: pointer;
+      }
+      .card-2 {
+        margin-top: 50px;
+        background-color: #191f30;
+        border-radius: 12px;
+        padding: 23px 53px;
+      }
+      .card-2 h2 {
+        font-family: centuryGothicB;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        color: #ffffff;
+      }
+      .card-2 span {
+        color: #2278d4;
+      }
+      .card-2 p {
+        font-family: centuryGhotic;
+        color: #8b8b8b;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .card-2 .text-learn-2 {
+        font-family: centuryGhotic;
+        color: #2278d4;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        cursor: pointer;
+      }
+      .info {
+        position: absolute;
+        top: 187px;
+        left: 42px;
+      }
+      .info-text {
+        width: 552px;
+      }
+      .wraper-q {
+        background-color: #0f1320;
+        border-radius: 0 230px 0 0;
+        height: 500px;
+      }
+      .q-row {
+        position: absolute;
+        top: 187px;
+        width: 90%;
+      }
+      .q-row p {
+        color: #22a75d;
+        font-family: centuryGhotic;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .q-row .info-q {
+        color: white;
+      }
+      .tokeners h1 {
+        font-family: centuryGothicB;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 54px;
+        color: #ffffff;
+      }
+      .tokeners p,
+      b {
+        font-family: centuryGhotic;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        opacity: 0.6;
+      }
+      .tokeners b {
+        letter-spacing: 1px;
+      }
+      .tokeners button {
+        background: transparent;
+        border: 2px solid #22a75d;
+        padding: 10px 31px;
+        border-radius: 71;
+        border-radius: 30px;
+        color: white;
+        letter-spacing: 1px;
+        margin-top: 20px;
+      }
+      .tokeners .handphone {
+        position: absolute;
+        top: 96px;
+        left: -4px;
+        width: 567px;
+        height: 820px;
+      }
+      .presale {
+        position: absolute;
+        top: 105rem;
+      }
+      .presale .jumbo {
+        position: absolute;
+        z-index: -1;
+        width: 1264px;
+        height: 766px;
+        left: -1px;
+      }
+      .presale .details {
+        position: absolute;
+        top: 13rem;
+        left: 39%;
+      }
+      .presale .details h1 {
+        font-family: centuryGothicB;
+        color: white;
+        letter-spacing: 1px;
+      }
+      .card-details {
+        position: absolute;
+        left: -343px;
+        top: 30px;
+        gap: 50px;
+      }
+      .card-details-1 {
+        background-color: #fff;
+        width: 285px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .card-details-2 {
+        position: relative;
+        top: 45px;
+        background-color: #fff;
+        width: 285px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .buy {
+        position: absolute;
+        top: 159rem;
+        width: 100%;
+      }
+      .buy h2 {
+        text-align: center;
+        color: white;
+        font-family: centuryGothicB;
+      }
+      .buy .buy-card-1 {
+        background-color: #171b29;
+        color: white;
+        padding: 35px;
+        border-radius: 18px;
+        box-sizing: border-box;
+        width: 304px;
+        height: 241px;
+        font-size: 16px;
+      }
+      .buy .buy-card-2 {
+        position: relative;
+        top: 52px;
+        background-color: #171b29;
+        color: white;
+        padding: 35px;
+        border-radius: 18px;
+        box-sizing: border-box;
+        width: 304px;
+        height: 241px;
+        font-size: 16px;
+      }
+      .buy .buy-card-2 .right-1 {
+        position: absolute;
+        left: -46px;
+        top: 83px;
+        width: 70px;
+      }
+      .buy .buy-card-2 .right-1:hover {
+        border-radius: 50%;
+        border: 2px solid #22a75d;
+      }
+      .buy .buy-card-2 .right-2 {
+        position: absolute;
+        right: -40px;
+        top: 85px;
+        width: 70px;
+      }
+      .buy .buy-card-2 .right-2:hover {
+        border-radius: 50%;
+        border: 2px solid #ffd100;
+      }
+      .ourteam {
+        position: absolute;
+        top: 190rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .ourteam ul {
+        font-family: centuryGothicB;
+        font-weight: 700;
+        color: white;
+        display: flex;
+        list-style: none;
+        gap: 60px;
+        text-decoration: underline;
+      }
+      .ourteam ul li:hover {
+        cursor: pointer;
+      }
+      footer {
+        position: absolute;
+        top: 197rem;
+        width: 100%;
+        height: 12rem;
+      }
+      footer h4 {
+        font-family: centuryGothicB;
+        font-weight: 700;
+        color: white;
+      }
+      footer .content {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+      }
+      footer p {
+        font-family: centuryGothicB;
+        font-weight: 700;
+        color: white;
+        line-height: 0;
+      }
+      .m-top {
+        margin-top: 95px;
+      }
+      /* navbar */
+      nav {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+      nav .logo {
+        color: white;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      nav .logo h1 {
+        font-size: 20px;
+        margin-top: 13px;
+      }
+      nav .logo img {
+        width: 30px;
+      }
+      nav ul {
+        position: relative;
+        left: -10rem;
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        margin-top: 20px;
+      }
+      nav ul li a {
+        color: #fff;
+        font-family: centuryGothicB;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all 0.3 ease;
+        padding: 8px 10px;
+        border-radius: 5px;
+      }
+      /* nav ul li a:hover {
+        background-color: #fff;
+        color: #1b1b1b;
+      } */
+      nav .menu-btn i {
+        color: #fff;
+        font-size: 22px;
+        display: none;
+      }
+      #click {
+        display: none;
+      }
+      nav button {
+        padding: 8px 24px;
+        border-radius: 22px;
+        margin: 0 10px;
+        background: none;
+        color: white;
+        font-family: centuryGhotic;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border: none;
+      }
+      .signup {
+        border: 2px solid #22a75d;
+      }
+      .social {
+        display: none;
+      }
+      .years-mobile {
+        display: none;
+      }
+      @media (max-width: 940px) {
+        nav .menu-btn i {
+          display: block;
+        }
+        #click:checked ~ .menu-btn i::before {
+          content: "\f00d";
+        }
+        nav ul {
+          position: fixed;
+          top: 80px;
+          background-color: #0f1320;
+          left: -100%;
+          height: 100vh;
+          width: 100%;
+          display: block;
+          transition: all 0.3s ease;
+        }
+        #click:checked ~ ul {
+          left: 0%;
+        }
+        nav ul li {
+          margin: 50px 0;
+        }
+        nav ul li a {
+          color: #595976;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        nav ul li a.active {
+          color: white;
+        }
+        .btns {
+          display: none;
+        }
+        .social {
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          position: relative;
+          top: 3rem;
+          left: -1rem;
+        }
+        .wraper-text {
+          position: relative;
+          left: -20px;
+          z-index: -1;
+        }
+        .img-1 {
+          position: relative;
+          left: -121px;
+          width: 36rem;
+          top: -131px;
+          z-index: -1;
+        }
+        .slide-2 {
+          display: none;
+        }
+        .title-2 {
+          font-size: 39px;
+          line-height: normal;
+          position: relative;
+          left: -21px;
+          top: -15rem;
+        }
+        .years-res {
+          display: none;
+        }
+        .years-mobile {
+          display: block;
+          position: relative;
+        }
+        .years-mobile img {
+          width: 53rem;
+          position: absolute;
+          top: -19rem;
+          left: -13rem;
+        }
+        .info-years {
+          position: relative;
+          top: 15rem;
+          left: -2rem;
+        }
+        .info-years img {
+          position: relative;
+          top: 3rem;
+        }
+        .m-top {
+          position: relative;
+          top: 13rem;
+        }
+        .card-2 {
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <div><img src="/asset/img/Group 3.png" alt="" /></div>
+        <h1>Tokeners</h1>
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#" class="active">Our team</a></li>
+        <li><a href="#">Tokens</a></li>
+        <li><a href="#">Connect wallet</a></li>
+        <li><a href="#">Lightpaper</a></li>
+        <div class="social">
+          <div>
+            <img src="/asset/img/twiter.png" alt="" />
+          </div>
+          <div>
+            <img src="/asset/img/telegram.png" alt="" />
+          </div>
+          <div>
+            <img src="/asset/img/instagram.png" alt="" />
+          </div>
+          <div>
+            <img src="/asset/img/medium.png" alt="" />
+          </div>
+          <div>
+            <img src="/asset/img/github.png" alt="" />
+          </div>
+          <div>
+            <img src="/asset/img/reddit.png" alt="" />
+          </div>
+        </div>
+      </ul>
+
+      <div class="btns">
+        <button>Sing In</button>
+        <button class="signup">Sing Up</button>
+      </div>
+    </nav>
+    <!-- slide 1 -->
+    <div class="row">
+      <div class="col-lg-6 wraper-text">
+        <div class="ms-5">
+          <h6 class="title">At Tokeners we are</h6>
+          <h1 class="text-1">
+            Reimagining social media throught the power of the blockchain.
+          </h1>
+          <p class="desc">
+            We are creating social media 3.0 with influencers, celebrities and
+            creators being able to launch their own digital currency by simply
+            creating a profile with media content posted as Non fungible Tokens
+            that can be owned and traded on the Tknrs network
+          </p>
+          <button class="learn-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="col-lg-6 position-relative">
+        <img src="./asset/img/img.svg" alt="img" class="img-1" />
+      </div>
+    </div>
+    <!-- slide 2 -->
+    <div class="row slide-2">
+      <div class="col-lg-5 wraper-text">
+        <div class="ms-5">
+          <h6 class="title">At Tokeners we are</h6>
+          <h1 class="text-1">Stand Out from The Crowd.</h1>
+          <p class="desc">
+            Agency is a full-service agency. busy designing and building
+            beautiful digital products, brands, and experiences.
+          </p>
+          <button class="learn-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="col-lg-7 position-relative">
+        <img src="./asset/img/img2.svg" alt="img" class="img-2" />
+      </div>
+    </div>
+    <section class="wraper-years">
+      <div class="ms-5">
+        <div class="col-lg-7">
+          <h1 class="title-2">We Make Designs that Lead and Inspire.</h1>
+        </div>
+        <!-- mobile view -->
+        <div class="years-mobile">
+          <img src="/asset/img/2022.png" alt="" />
+        </div>
+        <div class="row position-relative years-res">
+          <div class="col-lg-3 d-flex flex-column gap-5">
+            <div class="d-flex gap-5">
+              <div>
+                <img src="./asset/img/line.svg" alt="line" />
+              </div>
+              <p class="years">2018</p>
+            </div>
+            <div class="d-flex gap-5">
+              <div>
+                <img src="./asset/img/line.svg" alt="line" />
+              </div>
+              <p class="years">2019</p>
+            </div>
+            <div class="d-flex gap-5">
+              <div>
+                <img src="./asset/img/line.svg" alt="line" />
+              </div>
+              <p class="years">2020</p>
+            </div>
+            <div class="d-flex gap-5">
+              <div>
+                <img src="./asset/img/line.svg" alt="line" />
+              </div>
+              <p class="years">2021</p>
+            </div>
+            <div class="d-flex gap-5">
+              <div>
+                <img src="./asset/img/line.svg" alt="line" />
+              </div>
+              <p class="years">2022</p>
+              <div>
+                <img src="./asset/img/point line.svg" alt="point-line" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <img src="/asset/img/2022.png" alt="2022" class="img-years" />
+          </div>
+        </div>
+        <div class="row info-years">
+          <div class="col-lg-5 d-flex gap-5">
+            <div>
+              <img src="/asset/img/line.png" alt="line-ver" />
+            </div>
+            <div>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fugiat, autem animi officia maxime voluptatum cum error iure
+                veniam dicta ut.
+              </p>
+              <button>Contact Us</button>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+            <img
+              src="/asset/img/2022-number.png"
+              alt="number"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card-1">
+              <img src="/asset/img/creator.png" alt="" />
+              <h2>
+                For <span class="text-decoration-underline">Creator</span>
+              </h2>
+              <p>
+                Creator can gain independence throung a decentralised digital
+                currency system that is dependent on growing and engaging with
+                the community and also their star power. They own 10-15% of the
+                total value of the tokens minted.
+              </p>
+              <div class="d-flex gap-1">
+                <p class="text-learn-1">Learn More</p>
+                <div>
+                  <img src="/asset/img/arrow-right-ic.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-2">
+              <img src="/asset/img/holder.png" alt="" />
+              <h2>
+                For <span class="text-decoration-underline">Holders</span>
+              </h2>
+              <p>
+                Holding social tokens allows the individual to gain access to
+                benefits including unreleased content, private communities,
+                direct access to celebrity, early- access to tickets and more as
+                well as the ability to trade with other communities in order to
+                gain access to more creator content with early token buyers
+                being the biggest winners as the value of the token increases
+                with more buyers.
+              </p>
+              <div class="d-flex gap-1">
+                <p class="text-learn-2">Learn More</p>
+                <div>
+                  <img src="/asset/img/arrow-right-ic2.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-top">
+      <div>
+        <div class="d-flex">
+          <div class="w-50">
+            <img src="/asset/img/Group 34.png" alt="" class="w-100" />
+          </div>
+          <div class="w-50 position-relative">
+            <div>
+              <img src="/asset/img/Rectangle 11.png" alt="" class="w-100" />
+            </div>
+            <div class="info">
+              <div class="info-text">
+                <h1>What makes us different?</h1>
+                <h6>
+                  We would only launch tokens with the express permission of the
+                  creators.
+                </h6>
+                <p>
+                  There are several thousand celebrities and creators on
+                  twitter, tiktok, Instagram and YouTube with followings in the
+                  millions who we would be actively engaging before we go viral.
+                  We would get them on our platform and they would see the
+                  opportunity to create a fan driven digital economy where their
+                  digital content can be traded as NFTs and their most loyal
+                  fans can have the monetary value of their creator's currency
+                  increase significantly as they promote their digital currency
+                  across their channels while our native token holders benefit
+                  from the Weentar popularity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-white position-relative">
+        <div class="wraper-q">
+          <div class="container">
+            <div class="q-row">
+              <div class="d-flex gap-5">
+                <div class="">
+                  <div class="d-flex align-items-end">
+                    <div>
+                      <img src="/asset/img/q1.png" alt="q1" />
+                    </div>
+                    <div>
+                      <img src="/asset/img/pq1.png" alt="pq1" />
+                      <p>2021</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>01</p>
+                    <p class="info-q">Team set-up</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>02</p>
+                    <p class="info-q">Launch of information website</p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="d-flex align-items-end">
+                    <div>
+                      <img src="/asset/img/q2.png" alt="q1" />
+                    </div>
+                    <div>
+                      <img src="/asset/img/pq2.png" alt="pq1" />
+                      <p>2021</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>01</p>
+                    <p class="info-q">Presale and exchange listings</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>02</p>
+                    <p class="info-q">Blockchain development and launch</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>03</p>
+                    <p class="info-q">Launch of our MVP</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>04</p>
+                    <p class="info-q">Influencer agency partnerships</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>05</p>
+                    <p class="info-q">Marketing and promotion</p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="d-flex align-items-end">
+                    <div>
+                      <img src="/asset/img/q3.png" alt="q1" />
+                    </div>
+                    <div>
+                      <img src="/asset/img/pq3.png" alt="pq1" />
+                      <p>2021</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>01</p>
+                    <p class="info-q">
+                      Celebrity, Creator and Influencer partnerships
+                    </p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>02</p>
+                    <p class="info-q">
+                      Expansion of creator communities on our platform
+                    </p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>03</p>
+                    <p class="info-q">More Marketing and promotion</p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="d-flex align-items-end">
+                    <div>
+                      <img src="/asset/img/q4.png" alt="q1" />
+                    </div>
+                    <div>
+                      <img src="/asset/img/pq4.png" alt="pq1" />
+                      <p>2021</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>01</p>
+                    <p class="info-q">Maintstram partnerships</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>02</p>
+                    <p class="info-q">500 active creator communities</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>03</p>
+                    <p class="info-q">2Million active community members</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <p>03</p>
+                    <p class="info-q">More Marketing and promotion</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Tokeners is coming -->
+              <div class="row tokeners">
+                <div class="col-lg-6">
+                  <div class="d-flex gap-3 mt-5">
+                    <div>
+                      <img src="/asset/img/Group 3.png" alt="" />
+                    </div>
+                    <h1>Tokeners is coming</h1>
+                  </div>
+                  <div>
+                    <b
+                      >Cryptocurrency adoption is at less than 1% of the global
+                      world population with some countries and entities actively
+                      fighting against its mass adoption and the smartest
+                      developers and nerds holding the fort.</b
+                    >
+                    <br />
+                    <br />
+                    <p>
+                      Bitcoin was the first, and it has since grown to thousands
+                      of tokens launched all aiming to fix one problem or the
+                      other with some quite simply FOMOing the moment. Our goal
+                      is to bring mass adoption to the cryptocurrency space by
+                      dumbing it down. How far down? So down that even a
+                      celebrity can explain it in simple words to their
+                      followers and have them download an app, buy into the
+                      social currency of their favourite person and watch their
+                      investment as is with other crypto currency project.
+                    </p>
+
+                    <br />
+                    <p>
+                      We are trying to do to this space what investment apps did
+                      for the "nonexistent retail investors". We are gamefying
+                      digital currency, bringing in popular faces instead of
+                      hard to understand projects to make it the norm and
+                      inadvertently being the "gateway drug" for a lot of people
+                      to finally give this space a real look.
+                    </p>
+                    <b>
+                      A new digital economy is coming. People would be just as
+                      powerful as countries and creators would be paid beyond
+                      the peanuts that conventional social media platforms can
+                      offer.</b
+                    >
+                    <br />
+                    <br />
+                    <p>
+                      There would be new markets and advertisers with little to
+                      offer would not find home there. Like Kanye said,
+                    </p>
+                    <div class="d-flex gap-4">
+                      <div>
+                        <img src="/asset/img/quote.png" alt="quote" />
+                      </div>
+                      <p>
+                        "Personalities would become the new currency, and
+                        services would be built on top of them".
+                      </p>
+                    </div>
+                    <p>
+                      Well, Kanye didn't exactly say that, but it sounds like
+                      something we hope he would say.
+                    </p>
+                    <p>
+                      Currency is digital, it has been that way for a while now,
+                      but this time there would be no dead presidents on the
+                      money, there would people like you on the money, and you
+                      would own it because it would make the most sense in the
+                      world.
+                    </p>
+                    <button>Read More</button>
+                  </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                  <img
+                    src="/asset/img/hand-iphone.png"
+                    alt="handphone"
+                    class="handphone"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="presale position-relative">
+            <div class="container-fluid">
+              <img src="/asset/img/Group 2323333.png" alt="" class="jumbo" />
+            </div>
+            <div class="details position-relative">
+              <h1>Presale Details</h1>
+              <div class="d-flex card-details position-relative">
+                <div class="card-details-1">
+                  <img src="/asset/img/q1.png" alt="q1" />
+                  <h4>Phase One</h4>
+                  <h6>04/04/2021 - 16/04/2021</h6>
+                  <br />
+                  <p>1 BNB = 100000 WNTR</p>
+                  <p>Soft cap: 5000 BNB</p>
+                  <p>Hard cap: 10000 BNB</p>
+                </div>
+                <div class="card-details-2">
+                  <img src="/asset/img/q2.png" alt="q1" />
+                  <h4>Phase One</h4>
+                  <h6>04/04/2021 - 16/04/2021</h6>
+                  <br />
+                  <p>1 BNB = 100000 WNTR</p>
+                  <p>Soft cap: 5000 BNB</p>
+                  <p>Hard cap: 10000 BNB</p>
+                </div>
+                <div class="card-details-1">
+                  <img src="/asset/img/q3.png" alt="q3" />
+                  <h4>Phase One</h4>
+                  <h6>04/04/2021 - 16/04/2021</h6>
+                  <br />
+                  <p>1 BNB = 100000 WNTR</p>
+                  <p>Soft cap: 5000 BNB</p>
+                  <p>Hard cap: 10000 BNB</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="buy">
+            <h2>How to buy</h2>
+            <div class="d-flex gap-3 justify-content-center mt-3">
+              <div class="buy-card-1">
+                <p>01</p>
+                <div class="d-flex justify-content-center">
+                  <p class="w-75">
+                    First Connect your Metamask or TrustWallet to the Connect
+                    Wallet on the Homepage
+                  </p>
+                </div>
+              </div>
+              <div class="buy-card-2">
+                <p>02</p>
+                <div class="d-flex justify-content-center">
+                  <p class="w-75">
+                    Then send minimum of 0.1 BNB or maximum of 10 BNB to the
+                    Presale wallet
+                  </p>
+                </div>
+                <img src="/asset/img/arrow-right.png" alt="" class="right-1" />
+                <img
+                  src="/asset/img/arrow-right-2.png"
+                  alt=""
+                  class="right-2"
+                />
+              </div>
+              <div class="buy-card-1">
+                <p>03</p>
+                <div class="d-flex justify-content-center">
+                  <p class="w-75">
+                    Then after you will received your $WNTR to your address
+                    within 24hours
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="ourteam">
+            <ul>
+              <li>OUR TEAM</li>
+              <li>TOKENS</li>
+              <li>CONNECT WALLET</li>
+              <li>LIGHTPAPER</li>
+            </ul>
+          </section>
+          <footer class="d-flex justify-content-center align-items-center">
+            <div class="content">
+              <div class="d-flex gap-2">
+                <div>
+                  <img src="/asset/img/Group 3.png" alt="" />
+                </div>
+                <h4>Tokeners</h4>
+              </div>
+              <div class="d-flex gap-3">
+                <div>
+                  <img src="/asset/img/twiter.png" alt="twiter" />
+                </div>
+                <div>
+                  <img src="/asset/img/telegram.png" alt="telegram.png" />
+                </div>
+                <div>
+                  <img src="/asset/img/instagram.png" alt="instagram.png" />
+                </div>
+                <div>
+                  <img src="/asset/img/medium.png" alt="medium.png" />
+                </div>
+                <div>
+                  <img src="/asset/img/github.png" alt="github.png" />
+                </div>
+                <div>
+                  <img src="/asset/img/reddit.png" alt="reddit.png" />
+                </div>
+              </div>
+              <div>
+                <p>&copy;2021 Tokeners. All rights reserved.</p>
+                <div class="d-flex justify-content-end">
+                  <img src="/asset/img/Group 21.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
