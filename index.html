@@ -512,7 +512,13 @@
       .years-mobile {
         display: none;
       }
-      @media (max-width: 940px) {
+      .vector-1 img {
+        width: 100%;
+      }
+      .text-readmore {
+        display: block;
+      }
+      @media (max-width: 886px) {
         nav .menu-btn i {
           display: block;
         }
@@ -604,6 +610,156 @@
         }
         .card-2 {
           margin-top: 10px;
+        }
+        .vector-1 {
+          position: absolute;
+          z-index: 1;
+          top: -4rem;
+          transform: scaleX(-1);
+          left: 14rem;
+        }
+        .vector-1 img {
+          width: 27rem;
+          height: 17rem;
+        }
+        .vector-2 {
+          display: none;
+        }
+        .info {
+          background-color: #fff;
+          position: relative;
+          top: 13rem;
+          width: 25rem;
+          left: 0rem;
+          height: 39rem;
+          border-radius: 0 11rem 0 0;
+        }
+        .info-text {
+          position: relative;
+          top: 4rem;
+          width: 20rem;
+          left: 2rem;
+        }
+        .info-text h1 {
+          margin-bottom: 2rem;
+          font-size: 33px;
+        }
+        .wraper-q {
+          position: relative;
+          top: 26rem;
+        }
+        .list-q {
+          position: relative;
+          top: -8rem;
+          left: 1rem;
+        }
+        .tokeners .handphone {
+          position: relative;
+          top: -5rem;
+          height: 23rem;
+          width: 21rem;
+          left: 1rem;
+        }
+        .tokeners h1 {
+          font-size: 38px;
+          line-height: 1;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        .tokeners .iscoming {
+          position: relative;
+          left: 11px;
+        }
+        .text-readmore {
+          display: none;
+        }
+        .presale {
+          top: 140rem;
+        }
+        .card-details-1 {
+          position: relative;
+          left: 15rem;
+        }
+        .presale .jumbo {
+          width: 26rem;
+          height: 48rem;
+          top: 2rem;
+          left: -1rem;
+        }
+        .presale .details h1 {
+          position: relative;
+          left: -5rem;
+          top: 1rem;
+          font-size: 2rem;
+        }
+        .buy {
+          top: 184rem;
+        }
+        .buy .buy-card-1 {
+          width: 90%;
+          margin: 0 auto;
+        }
+        .buy .buy-card-2 {
+          width: 90%;
+          margin: 0 auto;
+          top: 1rem;
+          margin-bottom: 2rem;
+        }
+        .buy .buy-card-2 .right-1 {
+          top: -3rem;
+          transform: rotate(90deg);
+          left: 8rem;
+        }
+        .buy .buy-card-2 .right-2 {
+          top: 13.5rem;
+          left: 8rem;
+          transform: rotate(90deg);
+        }
+        .ourteam {
+          display: none;
+        }
+        footer {
+          top: 240rem;
+        }
+        footer .content {
+          display: block;
+        }
+        footer .content h4 {
+          font-size: 27px;
+        }
+        footer .logo-footer {
+          justify-content: center;
+          position: relative;
+          top: -2rem;
+        }
+        footer .medsos {
+          gap: 5px !important;
+          position: relative;
+          top: -2rem;
+        }
+        footer .copyright {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          top: -1rem;
+        }
+        .control-years {
+          position: relative;
+          top: -18rem;
+          display: flex;
+          justify-content: space-between;
+          left: -2rem;
+        }
+        select {
+          width: 10rem;
+          padding: 0 1rem;
+          background: black;
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          border: none;
+          border-radius: 5px;
         }
       }
     </style>
@@ -705,6 +861,23 @@
           <h1 class="title-2">We Make Designs that Lead and Inspire.</h1>
         </div>
         <!-- mobile view -->
+        <div class="control-years">
+          <div class="d-flex gap-3">
+            <div>
+              <img src="/asset/img/left-normal.png" alt="" />
+            </div>
+            <div>
+              <img src="/asset/img/right-hover.png" alt="" />
+            </div>
+          </div>
+          <select id="">
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+          </select>
+        </div>
         <div class="years-mobile">
           <img src="/asset/img/2022.png" alt="" />
         </div>
@@ -825,11 +998,11 @@
     <section class="m-top">
       <div>
         <div class="d-flex">
-          <div class="w-50">
-            <img src="/asset/img/Group 34.png" alt="" class="w-100" />
+          <div class="w-50 vector-1">
+            <img src="/asset/img/Group 34.png" alt="" />
           </div>
           <div class="w-50 position-relative">
-            <div>
+            <div class="vector-2">
               <img src="/asset/img/Rectangle 11.png" alt="" class="w-100" />
             </div>
             <div class="info">
@@ -843,6 +1016,8 @@
                   There are several thousand celebrities and creators on
                   twitter, tiktok, Instagram and YouTube with followings in the
                   millions who we would be actively engaging before we go viral.
+                </p>
+                <p>
                   We would get them on our platform and they would see the
                   opportunity to create a fan driven digital economy where their
                   digital content can be traded as NFTs and their most loyal
@@ -858,11 +1033,11 @@
       </div>
     </section>
     <section>
-      <div class="bg-white position-relative">
+      <div class="d-lg-bg-white position-relative">
         <div class="wraper-q">
           <div class="container">
             <div class="q-row">
-              <div class="d-flex gap-5">
+              <div class="d-lg-flex gap-5 list-q">
                 <div class="">
                   <div class="d-flex align-items-end">
                     <div>
@@ -970,8 +1145,8 @@
               </div>
               <!-- Tokeners is coming -->
               <div class="row tokeners">
-                <div class="col-lg-6">
-                  <div class="d-flex gap-3 mt-5">
+                <div class="col-lg-6 order-lg-1 order-2 iscoming">
+                  <div class="d-lg-flex d-block gap-3 mt-5">
                     <div>
                       <img src="/asset/img/Group 3.png" alt="" />
                     </div>
@@ -999,50 +1174,53 @@
                     </p>
 
                     <br />
-                    <p>
-                      We are trying to do to this space what investment apps did
-                      for the "nonexistent retail investors". We are gamefying
-                      digital currency, bringing in popular faces instead of
-                      hard to understand projects to make it the norm and
-                      inadvertently being the "gateway drug" for a lot of people
-                      to finally give this space a real look.
-                    </p>
-                    <b>
-                      A new digital economy is coming. People would be just as
-                      powerful as countries and creators would be paid beyond
-                      the peanuts that conventional social media platforms can
-                      offer.</b
-                    >
-                    <br />
-                    <br />
-                    <p>
-                      There would be new markets and advertisers with little to
-                      offer would not find home there. Like Kanye said,
-                    </p>
-                    <div class="d-flex gap-4">
-                      <div>
-                        <img src="/asset/img/quote.png" alt="quote" />
+                    <div class="text-readmore">
+                      <p>
+                        We are trying to do to this space what investment apps
+                        did for the "nonexistent retail investors". We are
+                        gamefying digital currency, bringing in popular faces
+                        instead of hard to understand projects to make it the
+                        norm and inadvertently being the "gateway drug" for a
+                        lot of people to finally give this space a real look.
+                      </p>
+                      <b>
+                        A new digital economy is coming. People would be just as
+                        powerful as countries and creators would be paid beyond
+                        the peanuts that conventional social media platforms can
+                        offer.</b
+                      >
+                      <br />
+                      <br />
+                      <p>
+                        There would be new markets and advertisers with little
+                        to offer would not find home there. Like Kanye said,
+                      </p>
+
+                      <div class="d-flex gap-4">
+                        <div>
+                          <img src="/asset/img/quote.png" alt="quote" />
+                        </div>
+                        <p>
+                          "Personalities would become the new currency, and
+                          services would be built on top of them".
+                        </p>
                       </div>
                       <p>
-                        "Personalities would become the new currency, and
-                        services would be built on top of them".
+                        Well, Kanye didn't exactly say that, but it sounds like
+                        something we hope he would say.
+                      </p>
+                      <p>
+                        Currency is digital, it has been that way for a while
+                        now, but this time there would be no dead presidents on
+                        the money, there would people like you on the money, and
+                        you would own it because it would make the most sense in
+                        the world.
                       </p>
                     </div>
-                    <p>
-                      Well, Kanye didn't exactly say that, but it sounds like
-                      something we hope he would say.
-                    </p>
-                    <p>
-                      Currency is digital, it has been that way for a while now,
-                      but this time there would be no dead presidents on the
-                      money, there would people like you on the money, and you
-                      would own it because it would make the most sense in the
-                      world.
-                    </p>
                     <button>Read More</button>
                   </div>
                 </div>
-                <div class="col-lg-6 position-relative">
+                <div class="col-lg-6 order-lg-2 order-1 position-relative">
                   <img
                     src="/asset/img/hand-iphone.png"
                     alt="handphone"
@@ -1059,7 +1237,7 @@
             <div class="details position-relative">
               <h1>Presale Details</h1>
               <div class="d-flex card-details position-relative">
-                <div class="card-details-1">
+                <div class="card-details-1 d-flex">
                   <img src="/asset/img/q1.png" alt="q1" />
                   <h4>Phase One</h4>
                   <h6>04/04/2021 - 16/04/2021</h6>
@@ -1068,7 +1246,7 @@
                   <p>Soft cap: 5000 BNB</p>
                   <p>Hard cap: 10000 BNB</p>
                 </div>
-                <div class="card-details-2">
+                <div class="card-details-2 d-none d-lg-flex">
                   <img src="/asset/img/q2.png" alt="q1" />
                   <h4>Phase One</h4>
                   <h6>04/04/2021 - 16/04/2021</h6>
@@ -1077,7 +1255,7 @@
                   <p>Soft cap: 5000 BNB</p>
                   <p>Hard cap: 10000 BNB</p>
                 </div>
-                <div class="card-details-1">
+                <div class="card-details-1 d-none d-lg-flex">
                   <img src="/asset/img/q3.png" alt="q3" />
                   <h4>Phase One</h4>
                   <h6>04/04/2021 - 16/04/2021</h6>
@@ -1091,7 +1269,7 @@
           </section>
           <section class="buy">
             <h2>How to buy</h2>
-            <div class="d-flex gap-3 justify-content-center mt-3">
+            <div class="d-lg-flex d-block gap-lg-3 justify-content-center mt-3">
               <div class="buy-card-1">
                 <p>01</p>
                 <div class="d-flex justify-content-center">
@@ -1137,13 +1315,13 @@
           </section>
           <footer class="d-flex justify-content-center align-items-center">
             <div class="content">
-              <div class="d-flex gap-2">
+              <div class="d-flex gap-2 logo-footer">
                 <div>
                   <img src="/asset/img/Group 3.png" alt="" />
                 </div>
                 <h4>Tokeners</h4>
               </div>
-              <div class="d-flex gap-3">
+              <div class="d-flex gap-3 medsos">
                 <div>
                   <img src="/asset/img/twiter.png" alt="twiter" />
                 </div>
@@ -1163,7 +1341,7 @@
                   <img src="/asset/img/reddit.png" alt="reddit.png" />
                 </div>
               </div>
-              <div>
+              <div class="copyright">
                 <p>&copy;2021 Tokeners. All rights reserved.</p>
                 <div class="d-flex justify-content-end">
                   <img src="/asset/img/Group 21.png" alt="" />
