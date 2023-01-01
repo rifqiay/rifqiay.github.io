@@ -32,15 +32,26 @@
       }
       @font-face {
         font-family: centuryGothicB;
-        src: url("./century-gothic/GOTHICB.TTF");
+        src: url("./asset/century-gothic/GOTHICB.TTF");
       }
       @font-face {
         font-family: centuryGhotic;
-        src: url("./century-gothic/CenturyGothic.ttf");
+        src: url("./asset/century-gothic/CenturyGothic.ttf");
       }
       body {
         background-color: #0f1320;
         overflow-x: hidden;
+      }
+      .bgc-body {
+        background-color: #0f1320;
+        width: 32rem;
+        padding: 0 2rem 11rem 2rem;
+        position: relative;
+        left: -2rem;
+      }
+      .new-btn {
+        position: relative;
+        top: -10rem;
       }
       .text-1 {
         color: #fff;
@@ -518,7 +529,36 @@
       .text-readmore {
         display: block;
       }
+      /* The dots/bullets/indicators */
+      .dots {
+        margin-left: 50px;
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .dot.active,
+      .dot:hover {
+        background-color: #717171;
+      }
+
+      #years-desktop p {
+        cursor: pointer;
+      }
+      .dot-mobile {
+        display: none;
+      }
       @media (max-width: 886px) {
+        body {
+          overflow-x: hidden;
+        }
         nav .menu-btn i {
           display: block;
         }
@@ -679,6 +719,7 @@
         .card-details-1 {
           position: relative;
           left: 15rem;
+          top: -1rem;
         }
         .presale .jumbo {
           width: 26rem;
@@ -686,11 +727,15 @@
           top: 2rem;
           left: -1rem;
         }
+        .presale .details {
+          z-index: -1;
+        }
         .presale .details h1 {
           position: relative;
           left: -5rem;
           top: 1rem;
           font-size: 2rem;
+          /* z-index: -1; */
         }
         .buy {
           top: 184rem;
@@ -708,11 +753,11 @@
         .buy .buy-card-2 .right-1 {
           top: -3rem;
           transform: rotate(90deg);
-          left: 8rem;
+          left: 12rem;
         }
         .buy .buy-card-2 .right-2 {
           top: 13.5rem;
-          left: 8rem;
+          left: 12rem;
           transform: rotate(90deg);
         }
         .ourteam {
@@ -760,6 +805,30 @@
           font-weight: 700;
           border: none;
           border-radius: 5px;
+        }
+        .dots {
+          display: none;
+        }
+
+        .dot-mobile {
+          position: relative;
+          top: 30px;
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #fff;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .dot-mobile:hover {
+          background-color: #717171;
+        }
+        .card-details-2 {
+          left: 15rem;
+          top: -1rem;
         }
       }
     </style>
@@ -817,43 +886,51 @@
         <button class="signup">Sing Up</button>
       </div>
     </nav>
-    <!-- slide 1 -->
-    <div class="row">
-      <div class="col-lg-6 wraper-text">
-        <div class="ms-5">
-          <h6 class="title">At Tokeners we are</h6>
-          <h1 class="text-1">
-            Reimagining social media throught the power of the blockchain.
-          </h1>
-          <p class="desc">
-            We are creating social media 3.0 with influencers, celebrities and
-            creators being able to launch their own digital currency by simply
-            creating a profile with media content posted as Non fungible Tokens
-            that can be owned and traded on the Tknrs network
-          </p>
-          <button class="learn-btn">Learn More</button>
+    <!-- slider -->
+    <div class="slider">
+      <!-- slide 1 -->
+      <div class="row slide">
+        <div class="col-lg-6 wraper-text">
+          <div class="ms-5">
+            <h6 class="title">At Tokeners we are</h6>
+            <h1 class="text-1">
+              Reimagining social media throught the power of the blockchain.
+            </h1>
+            <p class="desc">
+              We are creating social media 3.0 with influencers, celebrities and
+              creators being able to launch their own digital currency by simply
+              creating a profile with media content posted as Non fungible
+              Tokens that can be owned and traded on the Tknrs network
+            </p>
+            <button class="learn-btn">Learn More</button>
+          </div>
+        </div>
+        <div class="col-lg-6 position-relative">
+          <img src="./asset/img/img.svg" alt="img" class="img-1" />
         </div>
       </div>
-      <div class="col-lg-6 position-relative">
-        <img src="./asset/img/img.svg" alt="img" class="img-1" />
+      <!-- slide 2 -->
+      <div class="row slide-2 slide">
+        <div class="col-lg-5 wraper-text">
+          <div class="ms-5">
+            <h6 class="title">At Tokeners we are</h6>
+            <h1 class="text-1">Stand Out from The Crowd.</h1>
+            <p class="desc">
+              Agency is a full-service agency. busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+            <button class="learn-btn">Learn More</button>
+          </div>
+        </div>
+        <div class="col-lg-7 position-relative">
+          <img src="./asset/img/img2.svg" alt="img" class="img-2" />
+        </div>
       </div>
     </div>
-    <!-- slide 2 -->
-    <div class="row slide-2">
-      <div class="col-lg-5 wraper-text">
-        <div class="ms-5">
-          <h6 class="title">At Tokeners we are</h6>
-          <h1 class="text-1">Stand Out from The Crowd.</h1>
-          <p class="desc">
-            Agency is a full-service agency. busy designing and building
-            beautiful digital products, brands, and experiences.
-          </p>
-          <button class="learn-btn">Learn More</button>
-        </div>
-      </div>
-      <div class="col-lg-7 position-relative">
-        <img src="./asset/img/img2.svg" alt="img" class="img-2" />
-      </div>
+    <!-- dots -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
     </div>
     <section class="wraper-years">
       <div class="ms-5">
@@ -861,16 +938,16 @@
           <h1 class="title-2">We Make Designs that Lead and Inspire.</h1>
         </div>
         <!-- mobile view -->
-        <div class="control-years">
-          <div class="d-flex gap-3">
+        <div class="control-years d-lg-none">
+          <div class="d-flex gap-3" id="nav-years">
             <div>
-              <img src="/asset/img/left-normal.png" alt="" />
+              <img src="/asset/img/left-normal.png" alt="" id="left" />
             </div>
             <div>
-              <img src="/asset/img/right-hover.png" alt="" />
+              <img src="/asset/img/right-hover.png" alt="" id="right" />
             </div>
           </div>
-          <select id="">
+          <select id="select-years">
             <option value="2022">2022</option>
             <option value="2021">2021</option>
             <option value="2020">2020</option>
@@ -879,10 +956,10 @@
           </select>
         </div>
         <div class="years-mobile">
-          <img src="/asset/img/2022.png" alt="" />
+          <img src="/asset/img/2022.png" alt="" id="img-mobile" />
         </div>
         <div class="row position-relative years-res">
-          <div class="col-lg-3 d-flex flex-column gap-5">
+          <div class="col-lg-3 d-flex flex-column gap-5" id="years-desktop">
             <div class="d-flex gap-5">
               <div>
                 <img src="./asset/img/line.svg" alt="line" />
@@ -912,8 +989,12 @@
                 <img src="./asset/img/line.svg" alt="line" />
               </div>
               <p class="years">2022</p>
-              <div>
-                <img src="./asset/img/point line.svg" alt="point-line" />
+              <div id="line-years">
+                <img
+                  src="./asset/img/point line.svg"
+                  alt="point-line"
+                  id="img-line"
+                />
               </div>
             </div>
           </div>
@@ -940,7 +1021,7 @@
             <img
               src="/asset/img/2022-number.png"
               alt="number"
-              class="img-fluid"
+              class="img-fluid number-info"
             />
           </div>
         </div>
@@ -1174,7 +1255,7 @@
                     </p>
 
                     <br />
-                    <div class="text-readmore">
+                    <div class="text-readmore" id="text">
                       <p>
                         We are trying to do to this space what investment apps
                         did for the "nonexistent retail investors". We are
@@ -1217,7 +1298,13 @@
                         the world.
                       </p>
                     </div>
-                    <button>Read More</button>
+                    <button
+                      onclick="showText()"
+                      class="d-lg-none"
+                      id="btn-read-more"
+                    >
+                      Read More
+                    </button>
                   </div>
                 </div>
                 <div class="col-lg-6 order-lg-2 order-1 position-relative">
@@ -1237,7 +1324,7 @@
             <div class="details position-relative">
               <h1>Presale Details</h1>
               <div class="d-flex card-details position-relative">
-                <div class="card-details-1 d-flex">
+                <div class="d-none card-details-1 d-lg-flex">
                   <img src="/asset/img/q1.png" alt="q1" />
                   <h4>Phase One</h4>
                   <h6>04/04/2021 - 16/04/2021</h6>
@@ -1246,7 +1333,8 @@
                   <p>Soft cap: 5000 BNB</p>
                   <p>Hard cap: 10000 BNB</p>
                 </div>
-                <div class="card-details-2 d-none d-lg-flex">
+
+                <div class="d-none card-details-2 d-lg-flex">
                   <img src="/asset/img/q2.png" alt="q1" />
                   <h4>Phase One</h4>
                   <h6>04/04/2021 - 16/04/2021</h6>
@@ -1255,7 +1343,8 @@
                   <p>Soft cap: 5000 BNB</p>
                   <p>Hard cap: 10000 BNB</p>
                 </div>
-                <div class="card-details-1 d-none d-lg-flex">
+
+                <div class="d-none card-details-1 d-lg-flex">
                   <img src="/asset/img/q3.png" alt="q3" />
                   <h4>Phase One</h4>
                   <h6>04/04/2021 - 16/04/2021</h6>
@@ -1264,6 +1353,47 @@
                   <p>Soft cap: 5000 BNB</p>
                   <p>Hard cap: 10000 BNB</p>
                 </div>
+
+                <div class="slider-mobile d-lg-none">
+                  <div class="card-slides">
+                    <div class="card-details-1 d-flex">
+                      <img src="/asset/img/q1.png" alt="q1" />
+                      <h4>Phase One</h4>
+                      <h6>04/04/2021 - 16/04/2021</h6>
+                      <br />
+                      <p>1 BNB = 100000 WNTR</p>
+                      <p>Soft cap: 5000 BNB</p>
+                      <p>Hard cap: 10000 BNB</p>
+                    </div>
+                  </div>
+                  <div class="card-slides">
+                    <div class="card-slides card-details-2 d-flex">
+                      <img src="/asset/img/q2.png" alt="q1" />
+                      <h4>Phase One</h4>
+                      <h6>04/04/2021 - 16/04/2021</h6>
+                      <br />
+                      <p>1 BNB = 100000 WNTR</p>
+                      <p>Soft cap: 5000 BNB</p>
+                      <p>Hard cap: 10000 BNB</p>
+                    </div>
+                  </div>
+                  <div class="card-slides">
+                    <div class="card-slides card-details-1 d-flex">
+                      <img src="/asset/img/q3.png" alt="q3" />
+                      <h4>Phase One</h4>
+                      <h6>04/04/2021 - 16/04/2021</h6>
+                      <br />
+                      <p>1 BNB = 100000 WNTR</p>
+                      <p>Soft cap: 5000 BNB</p>
+                      <p>Hard cap: 10000 BNB</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dots-mobile">
+                <span class="dot-mobile" onclick="currentSlideMobile(0)"></span>
+                <span class="dot-mobile" onclick="currentSlideMobile(1)"></span>
+                <span class="dot-mobile" onclick="currentSlideMobile(3)"></span>
               </div>
             </div>
           </section>
@@ -1352,5 +1482,7 @@
         </div>
       </div>
     </section>
+
+    <script src="/asset/js/script.js"></script>
   </body>
 </html>
